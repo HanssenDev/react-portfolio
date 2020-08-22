@@ -7,6 +7,7 @@ function Hero() {
         <div>
             <div className="intro">
                 <h1>Hanssen Ramanjooloo</h1>
+                <p>Placeholder text</p>
             </div>
         </div>
     )

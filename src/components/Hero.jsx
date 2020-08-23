@@ -10,8 +10,8 @@ function Hero() {
             <p>Hi, my name is</p>
             <h1>Hanssen Ramanjooloo</h1>
             <p>and I'm a Front-End Developer</p>
-            <Button variant="primary" className="cta">
-              <a href="#projects">Projects</a>
+            <Button variant="primary" className="cta" size="lg">
+              <a href="#projects">View Projects</a>
             </Button>
           </div>
         </Container>

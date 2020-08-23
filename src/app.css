@@ -28,11 +28,13 @@ section {
 
 h1 {
   font-weight: bold;
+  font-size: 3rem;
 }
 
 h2 {
   margin-bottom: 30px;
   text-align: center;
+  font-size: 2.3rem;
 }
 
 img {
@@ -60,8 +62,12 @@ ul {
   margin: 0 15px;
 }
 
-.social-links:hover {
-  color: red;
+.social-links.linkedin:hover {
+  color: #007bb5;
+}
+
+.social-links.github:hover {
+  color: #6e5494;
 }
 
 /* --- HEADER --- */
@@ -75,8 +81,11 @@ ul {
   margin: 0 10px;
 }
 
-.navbar .nav-link.cta {
+.navbar .nav-link.cta,
+.navbar .nav-link.cta:active,
+.navbar .nav-link.cta:visited {
   color: var(--1);
+  font-weight: 500;
 }
 
 .navbar-toggler:focus,
@@ -90,6 +99,7 @@ ul {
 
 .hero {
   min-height: 100vh;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 }
 
 .hero .intro {
@@ -98,9 +108,10 @@ ul {
   top: 40%;
 }
 
-.cta:hover {
-  background-color: red;
+.hero .intro p {
+    font-size: 1.5rem;
 }
+
 
 /* --- PROJECTS --- */
 
@@ -111,13 +122,18 @@ ul {
   display: grid;
   width: 300px;
   grid-template-columns: 300px;
-  grid-template-rows: 300px 100px 100px 60px;
+  grid-template-rows: 300px 100px 100px 50px;
   grid-template-areas: "image" "text" "skills" "links";
   background: #fff;
   text-align: center;
   margin: 2rem auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 18px;
+  transition: all .3s;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
 }
 
 .project-img {
@@ -182,11 +198,25 @@ ul {
   border-right: 1px solid var(--4);
   border-bottom-left-radius: 15px;
   background: var(--1);
+  color: #fff;
+  font-weight: 500;
 }
 
 /* --- ABOUT --- */
 
 /* --- SKILLS --- */
+
+.skills-container {
+    padding: 40px 15px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--5);
+}
+
+.skills-container p {
+    color: black;
+    padding-top: 15px;
+}
 
 /* --- CONTACT --- */
 
@@ -203,6 +233,10 @@ footer ul {
   display: flex;
   justify-content: center;
   padding: 30px;
+}
+
+footer svg {
+    font-size: 2rem;
 }
 
 footer .name {

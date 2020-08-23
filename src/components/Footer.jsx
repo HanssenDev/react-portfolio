@@ -12,22 +12,22 @@ function Footer() {
         <ul>
           <li>
             <a
-              className="social-links"
+              className="social-links linkedin"
               href="https://www.linkedin.com/in/hanssen-ramanjooloo/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <LinkedInIcon />
+              <LinkedInIcon style={{ fontSize: 30 }} />
             </a>
           </li>
           <li>
             <a
-              className="social-links"
+              className="social-links github"
               href="https://github.com/HanssenDev"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <GitHubIcon />
+              <GitHubIcon style={{ fontSize: 30 }} />
             </a>
           </li>
         </ul>

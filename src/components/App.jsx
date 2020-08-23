@@ -6,18 +6,19 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 
 function App() {
-
-    return (
-        <header>
-            <Nav />
-            <Hero />
-        </header>
-        <main>
-            <Projects />
-            <Contact />
-        </main>
-        <Footer />
-    )
+  return (
+    <div>
+      <header>
+        <Nav />
+        <Hero />
+      </header>
+      <main>
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

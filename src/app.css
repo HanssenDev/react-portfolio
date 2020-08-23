@@ -1,0 +1,93 @@
+/* --- CSS VARIABLES --- */
+
+:root {
+    --main: #00d0ff;
+    --alt: ;
+  }
+  
+/* --- GLOBAL --- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    padding: 30px 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    margin: ;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cta.btn {
+    background-color: var(--main);
+    border-color: var(--main);
+}
+
+.social-links {
+    transition: all .3s;
+}
+
+.social-links:hover {
+    color: red;
+}
+
+/* --- HEADER --- */
+
+.logo-tag {
+    color: var(--main);
+    font-weight: bold;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.navbar .nav-link.cta {
+    color: var(--main);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* --- HERO --- */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    background-color: lightgrey;
+    /* justify-content: center; */
+}
+
+.hero .intro {
+    margin: auto 0;
+}
+
+.cta:hover {
+    background-color: red;
+}

@@ -8,8 +8,8 @@ function Footer() {
   return (
     <footer>
       <ul>
-        <li><LinkedInIcon /></li>
-        <li><GitHubIcon /></li>
+        <li><a className="social-links" href="https://www.linkedin.com/in/hanssen-ramanjooloo/" rel="noopener noreferrer" target="_blank"><LinkedInIcon /></a></li>
+        <li><a className="social-links" href="https://github.com/HanssenDev" rel="noopener noreferrer" target="_blank"><GitHubIcon  /></a></li>
       </ul>
       <p>&copy; Hanssen Ramanjooloo {year}</p>
     </footer>

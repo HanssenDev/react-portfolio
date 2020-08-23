@@ -1,23 +1,22 @@
 import React from "react";
-import Nav from "./Nav";
+import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Container from "react-bootstrap/container";
 
 function App() {
   return (
-    <div>
-      <header>
-        <Nav />
-        <Hero />
-      </header>
+    <Container>
+      <Header />
+      <Hero />
       <main>
         <Projects />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </Container>
   );
 }
 

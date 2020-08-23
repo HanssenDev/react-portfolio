@@ -2,15 +2,15 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div>
-      <div className="project-title">
-        <h3>{props.title}</h3>
-      </div>
-      <div className="project.description">
-        <p>{props.description}</p>
-      </div>
+    <div className="project-card">
       <div className="project-img">
-        <img src={props.img} alt={props.description} />
+        <a href={props.demo} target="_blank" rel="noopener noreferrer">
+          <img src={props.img} alt={props.description} />
+        </a>
+      </div>
+      <div className="project-text">
+        <h4>{props.title}</h4>
+        <p>{props.description}</p>
       </div>
       <div className="project-skills">
         <ul>
@@ -20,8 +20,22 @@ function ProjectCard(props) {
         </ul>
       </div>
       <div className="project-links">
-        <a href={props.demoURL}>Demo</a>
-        <a href={props.githubURL}>GitHub</a>
+        <a
+          className="project-link"
+          href={props.demo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>Demo</div>
+        </a>
+        <a
+          className="project-link"
+          href={props.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>GitHub</div>
+        </a>
       </div>
     </div>
   );

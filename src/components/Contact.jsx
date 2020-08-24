@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap/";
+import { Container, Row, Button } from "react-bootstrap/";
 
 function Contact() {
   return (
@@ -11,7 +11,12 @@ function Contact() {
             <input type="text" name="name" placeholder="Name"></input>
             <input type="text" name="email" placeholder="Email Address"></input>
             <textarea rows="4" placeholder="Your Message"></textarea>
-            <input type="submit" value="SUBMIT"></input>
+            <Button
+              as="input"
+              type="submit"
+              value="SUBMIT"
+              className="cta btn"
+            />
           </form>
         </Row>
       </Container>

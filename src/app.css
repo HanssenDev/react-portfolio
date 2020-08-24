@@ -3,7 +3,7 @@
 :root {
   --1: #00d0ff;
   --2: #c2f3ff;
-  --3: #012060;
+  --grey: #f1f1f1;
   --4: #016ba4;
   --5: #019ed2;
   --6: #67e3ff;
@@ -20,22 +20,29 @@ body {
   font-family: "Montserrat", Arial, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: #333;
 }
 
 section {
-  padding: 30px 0;
+  padding: 2rem 0;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   text-transform: uppercase;
 }
+  @media all and (min-width: 22.5em) {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
 
 h2 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
@@ -57,6 +64,11 @@ ul {
 .cta.btn {
   background-color: var(--1);
   border-color: var(--1);
+  transition: all .3s ease;
+}
+
+.cta.btn:hover {
+  transform: scale(1.1)
 }
 
 .social-links {
@@ -101,13 +113,13 @@ ul {
 
 .hero {
   min-height: 100vh;
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .hero .intro {
   margin: auto 0;
   position: absolute;
-  top: 40%;
+  top: 35%;
 }
 
 .hero .intro p {
@@ -118,6 +130,11 @@ ul {
 /* --- PROJECTS --- */
 
 #projects {
+  background-color: var(--grey);
+}
+
+.projects-row {
+  padding: 2rem 0;
 }
 
 .project-card {
@@ -150,7 +167,7 @@ ul {
 
 .project-text {
   grid-area: text;
-  margin: 15px;
+  padding: 15px;
 }
 
 .project-text p {
@@ -208,8 +225,12 @@ ul {
 
 /* --- SKILLS --- */
 
+#skills {
+  background-color: var(--grey);
+}
+
 .skills-container {
-    padding: 40px 15px;
+    padding: 3rem 1rem;
     margin: 0 auto;
     text-align: center;
     color: var(--5);
@@ -224,26 +245,27 @@ ul {
 
 form {
     margin: 0 auto;
+    padding: 3rem 1rem;
+    width: 90%;
 }
 
-form input,
+  @media all and (min-width: 48em) {
+    form {
+      width: 400px;
+    }
+  }
+
+form input[type="text"],
 form textarea {
-    display: block;
-    width: 400px;
+    width: 100%;
     margin-bottom: 2px;
-}
-
-input[type="submit"] {
-    background-color: var(--6);
-    border: 0;
-    border-radius: 4px;
-    height: 2.4rem;
 }
 
 /* --- FOOTER --- */
 
 footer {
-  background-color: #e9ecef;
+  background-color: #343a40;
+  color: #fff;
   height: 10rem;
   text-align: center;
   margin: 0 auto;
@@ -253,6 +275,10 @@ footer ul {
   display: flex;
   justify-content: center;
   padding: 30px;
+}
+
+footer p {
+  color: #a5a5a5;
 }
 
 footer svg {

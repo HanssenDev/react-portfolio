@@ -3,7 +3,7 @@ import Container from "react-bootstrap/container";
 
 function About() {
   return (
-    <section id="About">
+    <section id="about">
       <Container>
         <h2>About</h2>
       </Container>

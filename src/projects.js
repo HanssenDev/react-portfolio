@@ -11,7 +11,7 @@ import {
 const projects = [
   {
     title: "Simon Game",
-    description: "A Simon game app that I created to practice DOM Manipulation.",
+    description: "Simon game app that I created to practice DOM Manipulation.",
     thumbnail: "/img/simon-game.jpg",
     technologies: ["HTML", "CSS", "JavaScript"],
     githubURL: "https://github.com/HanssenDev/simon-game2",
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "Navi website",
-    description: "A mobile-first landing page for a travel start-up",
+    description: "Mobile-first landing page for a travel start-up",
     thumbnail: "/img/navi-website.jpg",
     technologies: ["HTML", "CSS", "Bootstrap"],
     githubURL: "https://github.com/HanssenDev/navi-website",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: "Note it",
-    description: "A note-taking app created using React with Hooks.",
+    description: "Note-taking app created using React with Hooks.",
     thumbnail: "/img/note-it.jpg",
     technologies: ["React", "JavaScript"],
     githubURL: "https://github.com/HanssenDev/note-it",
@@ -67,4 +67,4 @@ const skills = [
 ];
 
 export default projects;
-export {skills};
+export { skills };

@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LaunchIcon from '@material-ui/icons/Launch';
+import LaunchIcon from "@material-ui/icons/Launch";
 
 function ProjectCard(props) {
   return (
@@ -28,7 +28,9 @@ function ProjectCard(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div>Demo <LaunchIcon style={{ fontSize: 20 }}/></div>
+          <div>
+            Demo <LaunchIcon style={{ fontSize: 20 }} />
+          </div>
         </a>
         <a
           className="project-link"

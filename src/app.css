@@ -33,14 +33,14 @@ h1 {
   font-size: 2.1rem;
   text-transform: uppercase;
 }
-  @media all and (min-width: 22.5em) {
-    h1 {
-      font-size: 2.4rem;
-    }
+@media all and (min-width: 22.5em) {
+  h1 {
+    font-size: 2.4rem;
   }
+}
 
 h2 {
-  margin-bottom: 30px;
+  margin: 30px 0;
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -61,14 +61,18 @@ ul {
   list-style-type: none;
 }
 
+.row {
+  padding: 2rem 0;
+}
+
 .cta.btn {
   background-color: var(--1);
   border-color: var(--1);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .cta.btn:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .social-links {
@@ -113,7 +117,7 @@ ul {
 
 .hero {
   min-height: 100vh;
-   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .hero .intro {
@@ -123,9 +127,8 @@ ul {
 }
 
 .hero .intro p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 
 /* --- PROJECTS --- */
 
@@ -148,11 +151,11 @@ ul {
   margin: 2rem auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 18px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .project-card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .project-img {
@@ -170,8 +173,9 @@ ul {
   padding: 15px;
 }
 
-.project-text p {
-  font-size: 0.9rem;
+.project-text p,
+.about-box p {
+  font-size: 0.95rem;
   color: grey;
 }
 
@@ -223,6 +227,20 @@ ul {
 
 /* --- ABOUT --- */
 
+.avatar-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-box {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.about-box p:first-of-type {
+  margin-top: 2rem;
+}
+
 /* --- SKILLS --- */
 
 #skills {
@@ -230,35 +248,35 @@ ul {
 }
 
 .skills-container {
-    padding: 3rem 1rem;
-    margin: 0 auto;
-    text-align: center;
-    color: var(--5);
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--5);
 }
 
 .skills-container p {
-    color: black;
-    padding-top: 15px;
+  color: black;
+  padding-top: 15px;
 }
 
 /* --- CONTACT --- */
 
 form {
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    width: 90%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  width: 90%;
 }
 
-  @media all and (min-width: 48em) {
-    form {
-      width: 400px;
-    }
+@media all and (min-width: 48em) {
+  form {
+    width: 400px;
   }
+}
 
 form input[type="text"],
 form textarea {
-    width: 100%;
-    margin-bottom: 2px;
+  width: 100%;
+  margin-bottom: 2px;
 }
 
 /* --- FOOTER --- */
@@ -282,9 +300,9 @@ footer p {
 }
 
 footer svg {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-footer .name {
-  font-weight: 500;
+.name {
+  font-weight: 600;
 }

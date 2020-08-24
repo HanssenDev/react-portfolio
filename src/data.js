@@ -8,8 +8,10 @@ import {
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 const projects = [
   {
+    id: 1,
     title: "Simon Game",
     description: "Simon game app that I created to practice DOM Manipulation.",
     thumbnail: "/img/simon-game.jpg",
@@ -18,6 +20,7 @@ const projects = [
     demoURL: "https://hanssendev.github.io/simon-game2/",
   },
   {
+    id: 2,
     title: "Navi website",
     description: "Mobile-first landing page for a travel start-up",
     thumbnail: "/img/navi-website.jpg",
@@ -26,6 +29,7 @@ const projects = [
     demoURL: "https://hanssendev.github.io/navi-website/",
   },
   {
+    id: 3,
     title: "Note it",
     description: "Note-taking app created using React with Hooks.",
     thumbnail: "/img/note-it.jpg",

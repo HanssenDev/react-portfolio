@@ -4,7 +4,9 @@ import { Container, Row, Button } from "react-bootstrap/";
 function Contact() {
   return (
     <section id="contact">
-      <h2>Contact</h2>
+      <div className="heading-box">
+        <h2>Contact</h2>
+      </div>
       <Container>
         <Row>
           <form method="POST">

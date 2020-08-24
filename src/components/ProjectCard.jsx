@@ -16,22 +16,12 @@ function ProjectCard(props) {
       </div>
       <div className="project-skills">
         <ul>
-          {props.skills.map((skill) => (
-            <li>{skill}</li>
+          {props.skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
           ))}
         </ul>
       </div>
       <div className="project-links">
-        <a
-          className="project-link"
-          href={props.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div>
-            Demo <LaunchIcon style={{ fontSize: 20 }} />
-          </div>
-        </a>
         <a
           className="project-link"
           href={props.github}
@@ -40,6 +30,16 @@ function ProjectCard(props) {
         >
           <div>
             GitHub <GitHubIcon style={{ fontSize: 20 }} />
+          </div>
+        </a>
+        <a
+          className="project-link"
+          href={props.demo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            Demo <LaunchIcon style={{ fontSize: 20 }} />
           </div>
         </a>
       </div>

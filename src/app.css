@@ -1,12 +1,12 @@
 /* --- CSS VARIABLES --- */
 
 :root {
-  --1: #00d0ff;
-  --2: #c2f3ff;
-  --grey: #f1f1f1;
-  --4: #016ba4;
-  --5: #019ed2;
-  --6: #67e3ff;
+  --main: #00d0ff;
+  --secondary: #c2f3ff;
+  --alt: #019ed2;
+  --grey: #d4d4d4;
+  --dgrey: #909090;
+  --greybg: #f0f0f0;
 }
 
 /* --- GLOBAL --- */
@@ -40,10 +40,21 @@ h1 {
 }
 
 h2 {
-  margin: 30px 0;
+  margin: 30px auto;
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
+  display: inline-block;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--main);
+  width: 50%;
+  margin: auto;
+  position: relative;
+  bottom: -10px;
 }
 
 img {
@@ -61,14 +72,23 @@ ul {
   list-style-type: none;
 }
 
+#skills,
+#projects {
+  background-color: var(--greybg);
+}
+
+.heading-box {
+  text-align: center;
+}
+
 .row {
   padding: 2rem 0;
 }
 
 .cta.btn {
-  background-color: var(--1);
-  border-color: var(--1);
-  transition: all 0.3s ease;
+  background-color: var(--main);
+  border-color: var(--main);
+  transition: all 0.2s;
 }
 
 .cta.btn:hover {
@@ -91,7 +111,7 @@ ul {
 /* --- HEADER --- */
 
 .logo-tag {
-  color: var(--1);
+  color: var(--main);
   font-weight: bold;
 }
 
@@ -102,8 +122,8 @@ ul {
 .navbar .nav-link.cta,
 .navbar .nav-link.cta:active,
 .navbar .nav-link.cta:visited {
-  color: var(--1);
-  font-weight: 500;
+  color: var(--main);
+  font-weight: 600;
 }
 
 .navbar-toggler:focus,
@@ -130,11 +150,11 @@ ul {
   font-size: 1.5rem;
 }
 
-/* --- PROJECTS --- */
-
-#projects {
-  background-color: var(--grey);
+.hero .intro .cta {
+  margin-top: 1.5rem;
 }
+
+/* --- PROJECTS --- */
 
 .projects-row {
   padding: 2rem 0;
@@ -151,7 +171,7 @@ ul {
   margin: 2rem auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 18px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .project-card:hover {
@@ -170,18 +190,18 @@ ul {
 
 .project-text {
   grid-area: text;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .project-text p,
 .about-box p {
   font-size: 0.95rem;
-  color: grey;
+  color: var(--dgrey);
 }
 
 .project-skills {
   grid-area: skills;
-  color: grey;
+  color: var(--dgrey);
 }
 
 .project-skills ul {
@@ -194,7 +214,7 @@ ul {
 }
 
 .project-skills li {
-  background-color: var(--2);
+  background-color: var(--secondary);
   border-radius: 0.25rem;
   padding: 0.25rem 0.4em;
   font-size: 0.9rem;
@@ -207,20 +227,20 @@ ul {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-top: 1px solid var(--4);
+  border-top: 1px solid var(--grey);
 }
 
 .project-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
-.project-link:first-child {
-  border-right: 1px solid var(--4);
-  border-bottom-left-radius: 15px;
-  background: var(--1);
+.project-link:last-child {
+  border-left: 1px solid var(--grey);
+  border-bottom-right-radius: 15px;
+  background: var(--main);
   color: #fff;
   font-weight: 500;
 }
@@ -230,6 +250,12 @@ ul {
 .avatar-box {
   margin: 0 auto;
   text-align: center;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .about-box {
@@ -243,15 +269,11 @@ ul {
 
 /* --- SKILLS --- */
 
-#skills {
-  background-color: var(--grey);
-}
-
 .skills-container {
   padding: 3rem 1rem;
   margin: 0 auto;
   text-align: center;
-  color: var(--5);
+  color: var(--alt);
 }
 
 .skills-container p {
@@ -276,7 +298,14 @@ form {
 form input[type="text"],
 form textarea {
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--dgrey);
+  padding: 0.4rem;
+}
+
+form input[type="submit"] {
+  float: right;
 }
 
 /* --- FOOTER --- */
@@ -292,7 +321,7 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 2rem;
 }
 
 footer p {

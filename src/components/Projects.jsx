@@ -1,16 +1,19 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import projects from "../projects";
+import projects from "../data";
 import { Container, Row } from "react-bootstrap";
 
 function Projects() {
   return (
     <section id="projects">
       <Container>
-        <h2>Projects</h2>
+        <div className="heading-box">
+          <h2>Projects</h2>
+        </div>
         <Row className="projects-row">
           {projects.map((project) => (
             <ProjectCard
+              key={project.id}
               title={project.title}
               description={project.description}
               img={project.thumbnail}

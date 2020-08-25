@@ -13,6 +13,7 @@ function Skills() {
       </div>
       <Container>
         <Row>
+          {/* Map through skills array in data.js and render a skill icon and text using the data */}
           {skills.map((skill, index) => {
             return (
               <Col lg={4} xs={6} key={index}>

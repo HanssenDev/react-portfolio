@@ -5,10 +5,11 @@ import { Container, Row } from "react-bootstrap";
 
 function Projects() {
   return (
-    <section id="projects">
+    <section className="projects-section" id="projects">
       <Container>
         <div className="heading-box">
           <h2>Projects</h2>
+          <span className="big-heading">Projects</span>
         </div>
         <Row className="projects-row">
           {projects.map((project) => (

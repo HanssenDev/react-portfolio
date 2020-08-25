@@ -3,9 +3,10 @@ import { Container, Row, Button } from "react-bootstrap/";
 
 function Contact() {
   return (
-    <section id="contact">
+    <section className="contact-section" id="contact">
       <div className="heading-box">
         <h2>Contact</h2>
+        <span className="big-heading">Contact</span>
       </div>
       <Container>
         <Row>

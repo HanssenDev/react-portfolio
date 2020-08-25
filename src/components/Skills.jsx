@@ -6,9 +6,10 @@ import { Jquery } from "@icons-pack/react-simple-icons";
 
 function Skills() {
   return (
-    <section id="skills">
+    <section className="skills-section" id="skills">
       <div className="heading-box">
         <h2>Skills</h2>
+        <span className="big-heading">Skills</span>
       </div>
       <Container>
         <Row>
@@ -25,7 +26,7 @@ function Skills() {
           <Col lg={4} xs={6}>
             <div className="skills-container">
               <Jquery size="64" />
-              <p>Jquery</p>
+              <p>jQuery</p>
             </div>
           </Col>
         </Row>

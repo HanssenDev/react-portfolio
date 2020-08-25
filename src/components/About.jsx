@@ -4,10 +4,11 @@ import { ReactComponent as Avatar } from "../assets/myAvatar.svg";
 
 function About() {
   return (
-    <section id="about">
+    <section className="about-section" id="about">
       <Container>
         <div className="heading-box">
-          <h2>About Me</h2>
+          <h2>About</h2>
+          <span className="big-heading">About</span>
         </div>
         <Row md={2}>
           <div className="avatar-box">

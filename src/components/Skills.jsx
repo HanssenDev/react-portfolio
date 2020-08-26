@@ -16,7 +16,7 @@ function Skills() {
           {/* Map through skills array in data.js and render a skill icon and text using the data */}
           {skills.map((skill, index) => {
             return (
-              <Col lg={4} xs={6} key={index}>
+              <Col xs={6} md={4} key={index}>
                 <div className="skills-container">
                   <FontAwesomeIcon icon={skill.icon} size="4x" />
                   <p>{skill.title}</p>
@@ -24,7 +24,7 @@ function Skills() {
               </Col>
             );
           })}
-          <Col lg={4} xs={6}>
+          <Col xs={6} md={4}>
             <div className="skills-container">
               <Jquery size="64" />
               <p>jQuery</p>

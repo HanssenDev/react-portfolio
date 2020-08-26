@@ -8,15 +8,14 @@ import {
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 const projects = [
   {
     id: 1,
-    title: "Simon Game",
-    description: "Simon game app that I created to practice DOM Manipulation.",
-    thumbnail: "/img/simon-game.jpg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubURL: "https://github.com/HanssenDev/simon-game2",
+    title: "Personal Portfolio",
+    description: "Portfolio website to showcase my projects and skills.",
+    thumbnail: "/img/portfolio-img.jpg",
+    technologies: ["React", "CSS", "React Bootstrap"],
+    githubURL: "https://github.com/HanssenDev/react-portfolio",
     demoURL: "https://hanssendev.github.io/simon-game2/",
   },
   {
@@ -33,9 +32,18 @@ const projects = [
     title: "Note it",
     description: "Note-taking app created using React with Hooks.",
     thumbnail: "/img/note-it.jpg",
-    technologies: ["React", "JavaScript"],
+    technologies: ["React", "CSS", "JavaScript"],
     githubURL: "https://github.com/HanssenDev/note-it",
     demoURL: "https://hanssendev.github.io/note-it/",
+  },
+  {
+    id: 4,
+    title: "Simon Game",
+    description: "Simon game app that I created to practice DOM Manipulation.",
+    thumbnail: "/img/simon-game.jpg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubURL: "https://github.com/HanssenDev/simon-game2",
+    demoURL: "https://hanssendev.github.io/simon-game2/",
   },
 ];
 

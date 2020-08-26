@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "./Socials";
 import { Container, Row } from "react-bootstrap/";
 import { ReactComponent as Avatar } from "../assets/myAvatar.svg";
 
@@ -25,6 +26,7 @@ function About() {
               enjoyed it so far. The challenge that it presents keeps me engaged
               and eager to learn more.
             </p>
+            <Socials />
           </div>
         </Row>
       </Container>

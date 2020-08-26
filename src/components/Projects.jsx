@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Projects() {
   return (
@@ -13,15 +13,17 @@ function Projects() {
         </div>
         <Row className="projects-row">
           {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              img={project.thumbnail}
-              skills={project.technologies}
-              github={project.githubURL}
-              demo={project.demoURL}
-            />
+            <Col md={6} lg={4}>
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                img={project.thumbnail}
+                skills={project.technologies}
+                github={project.githubURL}
+                demo={project.demoURL}
+              />
+            </Col>
           ))}
         </Row>
       </Container>

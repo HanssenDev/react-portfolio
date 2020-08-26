@@ -123,15 +123,21 @@ ul {
 }
 
 .social-links {
-  transition: all 0.3s;
-  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
-.social-links.linkedin:hover {
+.social-link {
+  transition: all 0.3s;
+  margin-right: 1rem;
+}
+
+.social-link.linkedin:hover {
   color: #007bb5;
 }
 
-.social-links.github:hover {
+.social-link.github:hover {
   color: #6e5494;
 }
 
@@ -294,6 +300,10 @@ ul {
   margin-top: 2rem;
 }
 
+.about-box .social-links {
+  justify-content: flex-start;
+}
+
 /* --- SKILLS --- */
 
 .skills-container {
@@ -343,12 +353,6 @@ footer {
   height: 10rem;
   text-align: center;
   margin: 0 auto;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
 }
 
 footer p {

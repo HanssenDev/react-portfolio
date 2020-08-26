@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Row, Button } from "react-bootstrap/";
 import emailjs from "emailjs-com";
 
-
 function Contact() {
   // Create State object for inputs
   const [values, setValues] = useState({

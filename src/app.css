@@ -126,10 +126,11 @@ ul {
   text-transform: uppercase;
 }
 
-.cta.btn:hover,
-.cta.btn:active {
+.cta.btn.btn-primary:hover,
+.cta.btn.btn-primary:active {
   background-color: #fff;
   color: var(--text);
+  border-color: var(--main);
 }
 
 /* --- SOCIALS --- */
@@ -417,13 +418,19 @@ ul {
 /* --- SKILLS --- */
 
 .skills-container {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem 1rem;
   margin: 1rem;
   text-align: center;
   color: var(--alt);
   background-color: #fff;
   -webkit-box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
   box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+@media all and (min-width: 75em) {
+  .skills-container {
+    padding: 3rem;
+  }
 }
 
 .skills-container p {

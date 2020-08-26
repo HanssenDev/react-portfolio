@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data";
 import { Container, Row, Col } from "react-bootstrap";
+import Fade from "react-reveal/Fade";
 
 function Projects() {
   return (
@@ -14,15 +15,17 @@ function Projects() {
         <Row className="projects-row">
           {projects.map((project) => (
             <Col md={6} lg={4}>
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                img={project.thumbnail}
-                skills={project.technologies}
-                github={project.githubURL}
-                demo={project.demoURL}
-              />
+              <Fade bottom>
+                <ProjectCard
+                  key={project.id}
+                  title={project.title}
+                  description={project.description}
+                  img={project.thumbnail}
+                  skills={project.technologies}
+                  github={project.githubURL}
+                  demo={project.demoURL}
+                />
+              </Fade>
             </Col>
           ))}
         </Row>

@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "./Socials";
 import { Button, Container } from "react-bootstrap/";
 
 function Hero() {
@@ -13,6 +14,7 @@ function Hero() {
             <Button variant="primary" className="cta" size="lg">
               <a href="#projects">View Projects</a>
             </Button>
+            <Socials />
           </div>
         </Container>
       </section>

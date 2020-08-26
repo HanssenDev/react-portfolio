@@ -2,6 +2,7 @@ import React from "react";
 import Socials from "./Socials";
 import { Container, Row } from "react-bootstrap/";
 import { ReactComponent as Avatar } from "../assets/myAvatar.svg";
+import Fade from "react-reveal/Fade";
 
 function About() {
   return (
@@ -12,22 +13,26 @@ function About() {
           <span className="big-heading">About</span>
         </div>
         <Row md={2}>
-          <div className="avatar-box">
-            <Avatar className="avatar" />
-          </div>
-          <div className="about-box">
-            <h4>Front-End Developer</h4>
-            <p>
-              Hi there! I'm <span className="name">Hanssen</span> and I'm a
-              self-taught Front-End Developer based in London, UK.
-            </p>
-            <p>
-              I decided to learn coding as a challenge and I've thoroughly
-              enjoyed it so far. The challenge that it presents keeps me engaged
-              and eager to learn more.
-            </p>
-            <Socials />
-          </div>
+          <Fade left>
+            <div className="avatar-box">
+              <Avatar className="avatar" />
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="about-box">
+              <h4>Front-End Developer</h4>
+              <p>
+                Hi there! I'm <span className="name">Hanssen</span> and I'm a
+                self-taught Front-End Developer based in London, UK.
+              </p>
+              <p>
+                I decided to learn coding as a challenge and I've thoroughly
+                enjoyed it so far. The challenge that it presents keeps me
+                engaged and eager to learn more.
+              </p>
+              <Socials />
+            </div>
+          </Fade>
         </Row>
       </Container>
     </section>

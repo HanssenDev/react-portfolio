@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { skills } from "../data";
 import { Jquery } from "@icons-pack/react-simple-icons";
+import Fade from "react-reveal/Fade";
 
 function Skills() {
   return (
@@ -17,18 +18,22 @@ function Skills() {
           {skills.map((skill, index) => {
             return (
               <Col xs={6} md={4} key={index}>
-                <div className="skills-container">
-                  <FontAwesomeIcon icon={skill.icon} size="4x" />
-                  <p>{skill.title}</p>
-                </div>
+                <Fade bottom>
+                  <div className="skills-container">
+                    <FontAwesomeIcon icon={skill.icon} size="4x" />
+                    <p>{skill.title}</p>
+                  </div>
+                </Fade>
               </Col>
             );
           })}
           <Col xs={6} md={4}>
-            <div className="skills-container">
-              <Jquery size="64" />
-              <p>jQuery</p>
-            </div>
+            <Fade bottom>
+              <div className="skills-container">
+                <Jquery size="64" />
+                <p>jQuery</p>
+              </div>
+            </Fade>
           </Col>
         </Row>
       </Container>

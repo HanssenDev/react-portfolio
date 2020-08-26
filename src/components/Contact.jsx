@@ -79,6 +79,7 @@ function Contact() {
               value={values.name}
               placeholder="Name"
               required
+              aria-label="name"
             ></input>
             <input
               onChange={handleChange}
@@ -88,6 +89,7 @@ function Contact() {
               value={values.email}
               placeholder="Email Address"
               required
+              aria-label="email"
             ></input>
             <textarea
               onChange={handleChange}
@@ -97,12 +99,14 @@ function Contact() {
               value={values.message}
               placeholder="Your Message"
               required
+              aria-label="message"
             ></textarea>
             <Button
               as="input"
               type="submit"
               value="SUBMIT"
               className="cta btn"
+              aria-label="submit form"
             />
           </form>
         </Row>

@@ -13,7 +13,7 @@ const projects = [
     id: 1,
     title: "Personal Portfolio",
     description: "Portfolio website to showcase my projects and skills.",
-    thumbnail: "/img/portfolio-img.jpg",
+    thumbnail: "/img/portfolio.jpg",
     technologies: ["React", "CSS", "React Bootstrap"],
     githubURL: "https://github.com/HanssenDev/react-portfolio",
     demoURL: "https://hanssendev.github.io/simon-game2/",

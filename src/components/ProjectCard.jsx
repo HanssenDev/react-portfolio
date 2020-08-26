@@ -11,7 +11,7 @@ function ProjectCard(props) {
         </a>
       </div>
       <div className="project-text">
-        <h4>{props.title}</h4>
+        <h3>{props.title}</h3>
         <p>{props.description}</p>
       </div>
       <div className="project-skills">
@@ -23,7 +23,7 @@ function ProjectCard(props) {
       </div>
       <div className="project-links">
         <a
-          className="project-link"
+          className="project-link github"
           href={props.github}
           target="_blank"
           rel="noopener noreferrer"
@@ -33,7 +33,7 @@ function ProjectCard(props) {
           </div>
         </a>
         <a
-          className="project-link"
+          className="project-link demo"
           href={props.demo}
           target="_blank"
           rel="noopener noreferrer"

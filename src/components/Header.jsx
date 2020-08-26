@@ -8,7 +8,7 @@ function Header() {
         <Container>
           <Navbar.Brand href="#" className="logo">
             <span className="logo-tag">&lt;</span>
-            <span>Hanssen</span>
+            <span className="name">Hanssen</span>
             <span className="logo-tag"> /&gt;</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -1,0 +1,20 @@
+.skills-container {
+    padding: 2rem 1rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    color: $alt;
+    background-color: #fff;
+    -webkit-box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+    box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+  
+    p {
+      color: $text;
+      padding-top: 15px;
+    }
+  }
+  
+  @media all and (min-width: 75em) {
+    .skills-container {
+      padding: 3rem;
+    }
+  }

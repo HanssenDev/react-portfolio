@@ -1,0 +1,28 @@
+footer {
+  background-color: #343a40;
+  color: #fff;
+  height: 10rem;
+  text-align: center;
+  margin: 0 auto;
+
+  p {
+    color: #a5a5a5;
+  }
+
+  svg {
+    font-size: 2rem;
+  }
+
+  .back-to-top {
+    position: relative;
+    background-color: #ff6e10;
+    bottom: 12px;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+      background-color: #f3ad38;
+    }
+  }
+}

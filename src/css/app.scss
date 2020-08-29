@@ -1,0 +1,151 @@
+@import "./variables";
+@import "./socials";
+@import "./header";
+@import "./hero";
+@import "./projects";
+@import "./about";
+@import "./skills";
+@import "./contact";
+@import "./footer";
+
+
+/* =========
+GLOBAL VARIABLES
+========= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: $text;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* =========
+TYPOGRAPHY
+========= */
+
+h1,
+h2,
+.big-heading,
+.cta.btn {
+  text-transform: uppercase;
+}
+
+.name,
+.cta.btn {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+}
+@media all and (min-width: 22.5em) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.8rem;
+  display: inline-block;
+  letter-spacing: 5px;
+  font-weight: 600;
+
+  &:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid $secondary;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    bottom: -25px;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  opacity: 0.05;
+  position: absolute;
+  font-weight: 700;
+  left: 0;
+  right: 0;
+  top: 4px;
+}
+@media all and (min-width: 48em) {
+  .big-heading {
+    font-size: 4rem;
+    top: -3px;
+  }
+}
+
+.heading-box {
+  text-align: center;
+  position: relative;
+}
+
+/* =========
+SECTIONS
+========= */
+
+section {
+  padding: 2rem 0;
+}
+
+.skills-section,
+.projects-section {
+  background-color: $greybg;
+}
+
+.row {
+  padding: 2rem 0;
+}
+
+/* =========
+CTA
+========= */
+
+.cta.btn {
+  background-color: $main;
+  border-color: $main;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
+
+  &.btn-primary:hover,
+  &.btn-primary:active {
+    background-color: #fff;
+    color: $text;
+    border-color: $main;
+  }
+}

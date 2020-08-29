@@ -1,0 +1,35 @@
+.hero {
+    min-height: 100vh;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: -o-linear-gradient(45deg, #fff 40%, $main 100%);
+      background: linear-gradient(45deg, #fff 40%, $main 100%);
+      opacity: 0.2;
+      z-index: -1;
+    }
+  
+    .intro {
+      margin: auto 0;
+      position: absolute;
+      top: 35%;
+  
+      p {
+        font-size: 1.5rem;
+      }
+  
+      .cta {
+        margin-top: 1.5rem;
+      }
+    }
+  
+    .social-links {
+      justify-content: flex-start;
+    }
+  }

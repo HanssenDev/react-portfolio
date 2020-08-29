@@ -1,0 +1,31 @@
+.social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem 0 1rem;
+  }
+  
+  .social-link {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+  
+    &:hover,
+    &:active {
+      transform: translateY(-10px);
+    }
+    &.linkedin:hover,
+    &.linkedin:active {
+      color: #007bb5;
+    }
+    &.github:hover,
+    &.github:active {
+      color: #6e5494;
+    }
+  }

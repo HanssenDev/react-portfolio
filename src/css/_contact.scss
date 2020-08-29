@@ -1,0 +1,24 @@
+form {
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  width: 90%;
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid $dgrey;
+    padding: 0.4rem;
+  }
+
+  input[type="submit"] {
+    float: right;
+  }
+}
+
+@media all and (min-width: 48em) {
+  form {
+    width: 400px;
+  }
+}

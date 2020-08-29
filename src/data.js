@@ -6,6 +6,7 @@ import {
   faCss3,
   faNodeJs,
   faGit,
+  faSass
 } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
@@ -76,6 +77,10 @@ const skills = [
     icon: faGit,
     title: "Git",
   },
+  {
+    icon: faSass,
+    title: "Sass"
+  }
 ];
 
 export default projects;
